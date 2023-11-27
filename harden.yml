@@ -1,0 +1,10 @@
+---
+- hosts: node
+  become: true
+  roles:
+    - patch
+    - set_role
+    - firewalld
+    - chrony
+    - fail2ban
+    - motd
